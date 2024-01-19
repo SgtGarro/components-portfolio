@@ -1,0 +1,46 @@
+.dropdown {
+  width: inherit;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  overflow-y: hidden;
+}
+.trigger {
+  position: relative;
+  padding: 8px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  border-radius: inherit;
+}
+.title {
+  word-break: break-all;
+  width: 100%;
+}
+.icon {
+  transition: transform 0.3s ease-in-out;
+}
+.icon.active {
+  transform: rotate(180deg);
+}
+.content {
+  display: grid;
+  overflow: hidden;
+  grid-template-rows: 0fr;
+  transition: all 0.3s ease-in-out;
+}
+.content.active {
+  grid-template-rows: 1fr;
+}
+.content_container {
+  overflow-y: hidden;
+  padding: 12px 24px;
+  margin-top: -24px;
+  transition: all 0.3s ease-in-out;
+}
+.content.active .content_container {
+  margin-top: 0;
+}

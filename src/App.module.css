@@ -1,0 +1,12 @@
+.main {
+  padding: 24px 32px;
+}
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+.components {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
